@@ -1,0 +1,25 @@
+<h1>Bem-vindo!!!</h1>
+
+<p>A data de hoje é: <%= data_br(Date.today) %></p>
+
+<ul>
+  <li>
+  <a href="/coins">Cadastro de Moedas com tag HTML</a>
+  </li>
+  <li>
+    <%= link_to "Cadastro de Moedas com link_to do Rails", "/coins" %>
+  </li>
+</ul>
+
+<p>Você está em ambiente de <strong><%= ambiente_rails %></strong></p>
+
+<p>Seu nome é <a href="https://amazonasdev.com">Vivaldo Chagas</a></p>
+<p>Seu nome de trás pra frente é: <%= "Vivaldo Chagas".reverse %> </p>
+
+<!--com o =-->
+<p>A soma de 1 + 1 é: <%= 1 + 1 %></p>
+
+
+<!--sem o =-->
+<% ax = "Minha variavel a" %>
+<p>Imprimindo a variavel A -> <%= ax %></p>
